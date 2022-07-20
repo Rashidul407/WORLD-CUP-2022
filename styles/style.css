@@ -1,10 +1,14 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap');
 
-/* header style start  */
+
 main{
     width: 1321px;
     margin: 0 auto;
+    font-family: 'Cormorant SC', serif;
 }
+
+/* header style start  */
 
 .container{
     margin-top: 5rem;
@@ -12,12 +16,12 @@ main{
    background-color: black;
    padding: 15px 45px;
    width: 100%;
-   height: 400px;
+   height: 600px;
    border-radius: 30px
 
 }
 .header-text{
-
+    margin-top: 5em;
     color: white;
 }
 .header-text a{
@@ -39,15 +43,26 @@ main{
    margin-bottom: 4rem;
 }
 
+.header-image{
+    margin-top: 5em;
+}
+
 /* section part style start  */
+
+
+/* section part container-1 whole style start   */
 
 .whole-section{
     display: flex;
-    padding-right: 5%;
+    /* padding-right: 5%; */
     margin-top: 7rem;
-    
+    margin-bottom: 7rem;
+ }
 
+ #whole-match-section{
+    gap: 4rem;
 }
+
 .boxes{
     /* display: grid;
     grid-template-rows: repeat(1,1fr);
@@ -75,26 +90,29 @@ main{
     font-weight: bold;
     background-color: salmon;
     padding: 10px 30px;
+    min-width: 100%;
    
-}
-
-#blog:hover{
-     padding: 20px 50px;
-     font-size: 18px;
-     transition: all 3s;
-     
 }
 
 #upcoming{
     font-weight: bold;
     padding: 10px 30px;
+    min-width: 100%;
 }
 
 #All-group{
     padding: 10px 30px;
+    min-width: 100%;
     background-color:lightgray;
     font-weight: bold;
 }
+
+
+/* section part container-1 whole style end  */
+
+/* section part container-2 whole style start  */
+
+
 .container-2{
     padding: 10px 20px;
     /* width: 100%; */
@@ -110,7 +128,7 @@ main{
 }
 
 .blog{
-   
+    max-width: 100%;
     box-shadow: 0 0 15px lightgray;
     padding: 10px 20px;
 }
@@ -120,6 +138,7 @@ main{
     margin-bottom: 2rem;
 }
 
+/* index files continer-2 style start  */
 .transfer{
     text-decoration: none;
     border: 1px solid black;
@@ -134,43 +153,11 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-h2{
-    text-align: center;
-    font-size: 40px;
-}
 
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-   
-    height: 444px;
-}
-.goal{
-   padding-top: 10px;
-}
-.info{
-    display: flex;
-    justify-content: space-evenly;
-}
-hr{
-    color: rgba(198, 199, 200, 0.134);
-}
- 
-.info a{
-    text-decoration: none;
-    color: aliceblue;
-}
-.social-media-link{
-    margin-top: 8rem;
-}
+/* index files continer-2 style start  */
 
-.social-media-link a{
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 30px;
-    margin-right: 2em;
-}
+
+/* upcoming match files container-2 style start  */
 
 .image{
     display: flex;
@@ -178,49 +165,96 @@ hr{
     margin-top: 3.5em;
 
 }
+
 .match-details{
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold; 
 }
 .match-time{
     text-align: center;
-    font-size: 22px;
+    font-size: 19.5px;
 }
-/* @media only screen and (max-width:576px) {
 
-    header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5rem;
-        
+
+
+/* upcoming match files container-2 style start  */
+
+
+/* section part container-2 whole style end  */
+
+
+/* view All css start  */
+
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    display: none;
+}
+
+/* view All css end  */
+
+
+
+/* footer style start  */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 90px ;
+    height: 444px;
+    width: 100%;
+}
+.goal{
+   margin-bottom: 2rem;
+   padding-bottom: 40px;
+   font-size: 56px;
+}
+.info{
+    margin-top: 5.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+#hr{
+    width: 80%;
+}
+ 
+.info a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.social-media-link{
+    margin-top: 5rem;
+}
+
+.social-media-link a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 30px;
+    margin-right: 2em;
+
+}
+
+/* footer style emd  */
+
+/* responsive style start  */
+
+/* Medium devices (landscape tablets, 768px and up 991px) */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+     .whole-section{
+        flex-direction: column;
+       
+     }
     
-        
-    }
-    .container{
-        display: flex;
-        flex-direction: column-reverse;
-        height: 100%;
-        
-    }
-
-    .header-text{
-
-        color: white;
-        text-align: center;
-    }
-    .headline{
-        font-size: 30px;
-    }
-    .headline-summary{
-        
-       font-size: 16px;
-       width: 100%;
-       margin-bottom: 2rem;
-    }
-    
-} */
-
+     .blogs{
+        grid-template-columns: repeat(2,1fr);
+     }
+     h2{
+        display: block;
+     }
+}
 
  
