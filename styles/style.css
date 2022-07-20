@@ -15,7 +15,7 @@ main{
    display: flex;
    background-color: black;
    padding: 15px 45px;
-   width: 100%;
+   /* width: 100%; */
    height: 600px;
    border-radius: 30px
 
@@ -90,19 +90,19 @@ main{
     font-weight: bold;
     background-color: salmon;
     padding: 10px 30px;
-    min-width: 100%;
+    /* min-width: 100%; */
    
 }
 
 #upcoming{
     font-weight: bold;
     padding: 10px 30px;
-    min-width: 100%;
+    /* min-width: 100%; */
 }
 
 #All-group{
     padding: 10px 30px;
-    min-width: 100%;
+    /* min-width: 100%; */
     background-color:lightgray;
     font-weight: bold;
 }
@@ -240,21 +240,76 @@ footer{
 
 /* responsive style start  */
 
-/* Medium devices (landscape tablets, 768px and up 991px) */
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-
-     .whole-section{
-        flex-direction: column;
+@media only screen and (max-width:576px) {
+    main{
+        width: 376px;
+        margin: 0 auto;
+        font-family: 'Cormorant SC', serif;
+    }
+    .container{
+       display:block;
+       justify-items: center;
+       text-align: center;
+       background-color: black;
+       margin-right: 4em;
        
-     }
+       width: 100%;
+       height: 920px;
+      
     
-     .blogs{
-        grid-template-columns: repeat(2,1fr);
+    }
+    .headline-summary{
+    
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 4rem;
      }
-     h2{
-        display: block;
+     .header-image img{
+        width: 110%;
+        margin-top: 4rem;
+    }
+
+    /* ------------------------ */
+
+    .whole-section{
+        display:block;
+        /* padding-right: 5%; */
+        margin-top: 7rem;
+        margin-bottom: 7rem;
      }
+     .boxes{
+        
+        background-color: white;
+        margin-left: 44px;
+        margin-top: -4rem;
+        
+    }
+
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ------------------------ */
+
+    footer{
+        height: 700px;
+    }
+
+    .info{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 2em
+    }
+    .social-media-link {
+        /* width: 50%;
+        margin: 0 auto;
+        margin-right: 1rem; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
 
  
