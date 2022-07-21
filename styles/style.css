@@ -154,7 +154,8 @@ main{
 }
 
 .blog:hover{
-    background-color: darkkhaki;
+    background-color: navajowhite;
+    transition: all 3.5s;
 }
 .blog img{
     
